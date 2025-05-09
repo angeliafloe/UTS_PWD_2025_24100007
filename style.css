@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+:root{
+    --pinkmuda:#f8c8dc;
+    --pinkutama:#ff69b4;
+    --pinktua:#d04894;
+    --gradientbg:linear-gradient(to right, #ff69b4, #d04894);
+    --text:#333;
+}
+
+
+header{
+    background: linear-gradient(to right, #ff69b4, #d04894);
+    color: white;
+    padding:60px 20px;
+    text-align: center;
+}
+
+header h1{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    animation-name: bounce;
+    animation-duration: 2s;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: white;
+    color: #d04894;
+    border-radius: 25px;
+    border:none;
+    cursor: pointer;
+    font-size:1rem;
+    text-decoration: none;
+}
+
+@keyframes bounce{
+    0%, 20%, 40%, 60%, 80%, 100%{
+        transform:translateY(0);
+      }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform:translateY(-10px);
+    }
+}
+
+.btn:hover{
+    background: #f8c8dc;
+}
+
+section{
+    padding:60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+  }
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-section{
+    text-align: center;
+    margin-top:50px;
+}
+
+.search-section h2{
+    font-size:2rem;
+}
+
+.search-form{
+    gap:20px;
+}
+
+.search-form input{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+    border:1px solid gray;
+    font-size:1rem;  
+}
+
+.search-form button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 10px;
+    background: #ff69b4;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    font-size:1rem;      
+}
+
+.search-form #category{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border:1px solid gray;
+    font-size:1rem; 
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+
+}
+
+.features .feature-box{
+    background: #fff0f5;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(223, 223, 223, 0.5);
+}
+
+.features .feature-box i{
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 15px;
+}
+
+.features .feature-box h3{
+    color: #333;
+    margin:15px 0;
+}
+
+.cta{
+    background: #f8c8dc;
+    color: #333;
+}
+
+.cta h2{
+    font-size: 2rem;
+}
+
+footer{
+    background: #ff69b4;
+    text-align: center;
+    color: white;
+    padding: 20px 20px;
+}
